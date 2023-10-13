@@ -1,4 +1,4 @@
-NAME = clapTrap
+NAME = interface
 
 RM = rm -rf
 
@@ -6,11 +6,11 @@ CC = c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g -Wuninitialized
 
-SRC = 	main.cpp ClapTrap.cpp
+SRC = 	main.cpp AMateria.cpp Character.cpp Ice.cpp Cure.cpp MateriaSource.cpp
 O_SRC = $(SRC:.cpp=.o)
 
 BARS := "▰▰▱▱▱▱▱▱▱▱▱ 17%" "▰▰▰▱▱▱▱▱▱▱▱ 23%" "▰▰▰▰▱▱▱▱▱▱▱ 38%" "▰▰▰▰▰▱▱▱▱▱▱ 42%" "▰▰▰▰▰▰▱▱▱▱▱ 51%" \
-		"▰▰▰▰▰▰▰▱▱▱▱ 65%" "▰▰▰▰▰▰▰▰▱▱▱ 79%" "▰▰▰▰▰▰▰▰▰▱▱ 87%" "▰▰▰▰▰▰▰▰▰▰ 94%" "▰▰▰▰▰▰▰▰▰▰ 100%" \
+		"▰▰▰▰▰▰▰▱▱▱▱ 65%" "▰▰▰▰▰▰▰▰▱▱▱ 79%" "▰▰▰▰▰▰▰▰▰▱▱ 87%" "▰▰▰▰▰▰▰▰▰▰▱ 94%" "▰▰▰▰▰▰▰▰▰▰ 100%" \
 
 all: $(NAME)
 	@for bar in $(BARS); do \

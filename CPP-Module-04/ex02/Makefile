@@ -1,4 +1,4 @@
-NAME = clapTrap
+NAME = world_on_fire
 
 RM = rm -rf
 
@@ -6,7 +6,7 @@ CC = c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g -Wuninitialized
 
-SRC = 	main.cpp ClapTrap.cpp
+SRC = 	main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 O_SRC = $(SRC:.cpp=.o)
 
 BARS := "▰▰▱▱▱▱▱▱▱▱▱ 17%" "▰▰▰▱▱▱▱▱▱▱▱ 23%" "▰▰▰▰▱▱▱▱▱▱▱ 38%" "▰▰▰▰▰▱▱▱▱▱▱ 42%" "▰▰▰▰▰▰▱▱▱▱▱ 51%" \
