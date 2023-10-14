@@ -1,4 +1,4 @@
-NAME = world_on_fire
+NAME = abstract
 
 RM = rm -rf
 
